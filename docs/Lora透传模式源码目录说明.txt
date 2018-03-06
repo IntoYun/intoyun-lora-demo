@@ -1,0 +1,20 @@
+一、文件目录说明：
+1.docs为文档类
+2.keil为Keil-MDK平台工程，包含rx和tx这2个工程 测试时一个板子烧录rx的工程代码，另外一个烧录tx的工程代码
+3.src下为源代码
+
+二、src文件夹目录说明
+apps为应用程序包含发送和接收2个应用程序
+hal为stm32l151xx/103xx/411xx的外设实现 包含串口/spi引脚初始化等功能的实现
+radio为Semtech sx1278官方驱动文件
+mcu为stm32l151xx/103xx/411xx驱动库
+
+三、移植说明
+此驱动为stm32l151xb/103xb/411xe的，如果想移植到其他MCU平台 ，则需做以下修改
+1.radio文件夹的内容全部移植过去无需修改
+2.hal文件夹底下的hal_interface.h和hal_interface.c文件移植过去
+3.在hal_interface.h修改引脚定义
+4.hal_interface.h里面声明的函数需在hal_interface.c里面全部实现
+5.delay() 与 millis()函数
+此2个函数在stm32中为获取的是系统滴答定时器的数值，即stm32系统时钟滴答定时器，时间周期为1ms，
+如果没有滴答定时器可以用一个定时器处理，定时周期为1ms

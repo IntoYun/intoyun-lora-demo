@@ -1,52 +1,43 @@
-# Prerequisites
-*.d
+keil/stm32f103xb/rx/Listings
+keil/stm32f103xb/rx/Objects
+keil/stm32f103xb/rx/DebugConfig
+keil/stm32f103xb/rx/RTE
+keil/stm32f103xb/rx/*.lz
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+keil/stm32f103xb/tx/Listings
+keil/stm32f103xb/tx/Objects
+keil/stm32f103xb/tx/DebugConfig
+keil/stm32f103xb/tx/RTE
+keil/stm32f103xb/tx/*.lz
 
-# Linker output
-*.ilk
-*.map
-*.exp
+keil/stm32f411xe/rx/Listings
+keil/stm32f411xe/rx/Objects
+keil/stm32f411xe/rx/DebugConfig
+keil/stm32f411xe/rx/RTE
+keil/stm32f411xe/rx/*.lz
 
-# Precompiled Headers
-*.gch
-*.pch
+keil/stm32f411xe/tx/Listings
+keil/stm32f411xe/tx/Objects
+keil/stm32f411xe/tx/DebugConfig
+keil/stm32f411xe/tx/RTE
+keil/stm32f411xe/tx/*.lz
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+keil/stm32l151xb/rx/Listings
+keil/stm32l151xb/rx/Objects
+keil/stm32l151xb/rx/DebugConfig
+keil/stm32l151xb/rx/RTE
+keil/stm32l151xb/rx/*.lz
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+keil/stm32l151xb/tx/Listings
+keil/stm32l151xb/tx/Objects
+keil/stm32l151xb/tx/DebugConfig
+keil/stm32l151xb/tx/RTE
+keil/stm32l151xb/tx/*.lz
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# gtags相关文件
+GPATH
+GRTAGS
+GTAGS
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# tags
+tags
